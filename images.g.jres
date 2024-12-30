@@ -4,15 +4,20 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "moon"
     },
-    "image1": {
-        "data": "hwQKAAoAAACZmZmZmQAAAJmZmZmZAAAA+Z/5/5kAAAD5n5n5mQAAAJmZmfmZAAAAmZmZ+ZkAAAD5n5n5mQAAAPmf+f+ZAAAAmZmZmZkAAACZmZmZmQAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "had_hlava"
-    },
     "image3": {
         "data": "hwQKAAoAAACIiIiIiAAAAJiZmZmJAAAAmJmZmYkAAACYmZmZiQAAAJiZmZmJAAAAmJmZmYkAAACYmZmZiQAAAJiZmZmJAAAAmJmZmYkAAACIiIiIiAAAAA==",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "had_telo"
+    },
+    "image1": {
+        "data": "hwQKAAoAAACIiIiIiAAAAJiZmZmJAAAA+J/5/4kAAAD4n5n5iQAAAJiZmfmJAAAAmJmZ+YkAAAD4n5n5iQAAAPif+f+JAAAAmJmZmYkAAACIiIiIiAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "had_hlava"
+    },
+    "image4": {
+        "data": "hwQKAAoAAAAAAAAAAAAAAAAAIgAAAAAAACAiAgAAAAAAIiIiAgAAAO4iIiLiAAAAByIiIuIAAAAAIiIiAgAAAAAiIiICAAAAACAiAgAAAAAAACIAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "jablicko"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
