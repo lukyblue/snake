@@ -87,7 +87,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function(sprite: Sprite, o
     info.changeScoreBy(1)
     jablicka++
 
-    music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.UntilDone)
+    music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
 
     if (jablicka == 190) {
         game.over(true)
