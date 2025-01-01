@@ -43,7 +43,7 @@ game.onUpdateInterval(350, function() {
         }
     }
 
-    let had_telo = sprites.create(assets.image`had_telo`, telo_kind)
+    let had_telo = sprites.create(assets.image`had_telo_up-texture`, telo_kind)
     had_telo.setPosition(pixel(hlava_x), pixel(hlava_y))
     had_pole.push(had_telo)
     if(had_pole.length>jablicka){
