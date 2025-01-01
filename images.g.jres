@@ -4,20 +4,35 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "moon"
     },
+    "image4": {
+        "data": "hwQKAAoAAAAAAAAAAAAAAAAAIiIAAAAAACARRAIAAAAAIEEkIgAAAODuJCIiAAAADiciIiIAAAAAJyIiIgAAAHAgIiICAAAAAAAiIgAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "jablicko"
+    },
     "image3": {
-        "data": "hwQKAAoAAACIiIiIiAAAAJiZmZmJAAAAmJmZmYkAAACYmZmZiQAAAJiZmZmJAAAAmJmZmYkAAACYmZmZiQAAAJiZmZmJAAAAmJmZmYkAAACIiIiIiAAAAA==",
+        "data": "hwQKAAoAAAAAAAAAAAAAAACZCQAAAAAAmZmZCQAAAACZd5eZmQAAAHdmdpeZAAAAZplpdncAAACZmZlpZgAAAJkAkJmZAAAAAAAAkJkAAAAAAAAAAAAAAA==",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "had_telo"
     },
-    "image1": {
-        "data": "hwQKAAoAAACIiIiIiAAAAJiZmZmJAAAA+J/5/4kAAAD4n5n5iQAAAJiZmfmJAAAAmJmZ+YkAAAD4n5n5iQAAAPif+f+JAAAAmJmZmYkAAACIiIiIiAAAAA==",
+    "image6": {
+        "data": "hwQKAAoAAAAAAAAAAAAAAACQmQkAAAAAkJlmGQEAAACZZpYZnwAAAGZmmZmZAAAAd3eZmZkAAACZd5cZnwAAAJCZdxkBAAAAAJCZCQAAAAAAAAAAAAAAAA==",
         "mimeType": "image/x-mkcd-f4",
-        "displayName": "had_hlava"
+        "displayName": "had_hlava_down-texture"
     },
-    "image4": {
-        "data": "hwQKAAoAAAAAAAAAAAAAAAAAIgAAAAAAACAiAgAAAAAAIiIiAgAAAO4iIiLiAAAAByIiIuIAAAAAIiIiAgAAAAAiIiICAAAAACAiAgAAAAAAACIAAAAAAA==",
+    "image7": {
+        "data": "hwQKAAoAAAAAkJkJAAAAAADxmR8AAAAAABGZEQAAAACQmZmZCQAAAJCWmXkJAAAAkGaZdwkAAACQaXaXCQAAAABpdpcAAAAAAJl2mQAAAAAAkHYJAAAAAA==",
         "mimeType": "image/x-mkcd-f4",
-        "displayName": "jablicko"
+        "displayName": "had_hlava_left-texture"
+    },
+    "image1": {
+        "data": "hwQKAAoAAAAAAAAAAAAAAACQmQkAAAAAEJF3mQkAAAD5kXl3mQAAAJmZmXd3AAAAmZmZZmYAAAD5kWlmmQAAABCRZpkJAAAAAJCZCQAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "had_hlava_up-texture"
+    },
+    "image5": {
+        "data": "hwQKAAoAAAAAkGcJAAAAAACZZ5kAAAAAAHlnlgAAAACQeWeWCQAAAJB3mWYJAAAAkJeZaQkAAACQmZmZCQAAAAARmREAAAAAAPGZHwAAAAAAkJkJAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "had_hlava_right-texture"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",

@@ -6,7 +6,7 @@ let strana = 0 // 1 - up, 2 - right, 3 - down, 4 - left
 let hlava_x = 8
 let hlava_y = 6
 let jablicko = sprites.create(assets.image`jablicko`, SpriteKind.Food)
-let had_hlava = sprites.create(assets.image`had_hlava`, SpriteKind.Player)
+let had_hlava = sprites.create(assets.image`had_hlava_up-texture`, SpriteKind.Player)
 had_hlava.z=100
 jablicko.z = 50
 scene.setBackgroundImage(assets.image`moon`)
@@ -36,6 +36,13 @@ game.onUpdateInterval(350, function() {
     if(strana==0){
         return
     }
+
+    for (let i = 0; i < had_pole.length; i++) {
+        if (had_hlava.x == had_pole[i].x && had_hlava.y == had_pole[i].y) {
+            snez_sebe()
+        }
+    }
+
     let had_telo = sprites.create(assets.image`had_telo`, telo_kind)
     had_telo.setPosition(pixel(hlava_x), pixel(hlava_y))
     had_pole.push(had_telo)
@@ -47,6 +54,8 @@ game.onUpdateInterval(350, function() {
     
 
     if (strana==1) {
+        had_hlava.setImage(assets.image`had_hlava_up-texture`)
+        had_hlava.setKind(SpriteKind.Player)
         hlava_y--
         if (hlava_y<0){
             hlava_y=11
@@ -54,6 +63,8 @@ game.onUpdateInterval(350, function() {
     }
 
     if (strana == 2) {
+        had_hlava.setImage(assets.image`had_hlava_right-texture`)
+        had_hlava.setKind(SpriteKind.Player)
         hlava_x++
         if (hlava_x > 15) {
             hlava_x = 0
@@ -61,6 +72,8 @@ game.onUpdateInterval(350, function() {
     }
 
     if (strana == 3) {
+        had_hlava.setImage(assets.image`had_hlava_down-texture`)
+        had_hlava.setKind(SpriteKind.Player)
         hlava_y++
         if (hlava_y > 11) {
             hlava_y = 0
@@ -68,6 +81,8 @@ game.onUpdateInterval(350, function() {
     }
 
     if (strana == 4) {
+        had_hlava.setImage(assets.image`had_hlava_left-texture`)
+        had_hlava.setKind(SpriteKind.Player)
         hlava_x--
         if (hlava_x < 0) {
             hlava_x = 15
@@ -75,15 +90,28 @@ game.onUpdateInterval(350, function() {
     }
 
     had_hlava.setPosition(pixel(hlava_x), pixel(hlava_y))
+
+    if (had_hlava.x == jablicko.x && had_hlava.y == jablicko.y) {
+        snez_jablicko()
+    }
 })
 
 
-sprites.onOverlap(SpriteKind.Player, telo_kind, function(sprite: Sprite, otherSprite: Sprite) {
+// sprites.onOverlap(SpriteKind.Player, telo_kind, function(sprite: Sprite, otherSprite: Sprite) {
     
-    game.gameOver(false)
-})
+//     music.play(music.melodyPlayable(music.wawawawaa), music.PlaybackMode.InBackground)
+//     game.gameOver(false)
 
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function(sprite: Sprite, otherSprite: Sprite) {
+// })
+
+//sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, snez_jablko)
+
+function snez_sebe() {
+    music.play(music.melodyPlayable(music.wawawawaa), music.PlaybackMode.InBackground)
+    game.gameOver(false)
+}
+
+function snez_jablicko() {
     info.changeScoreBy(1)
     jablicka++
 
@@ -95,7 +123,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function(sprite: Sprite, o
 
     while (true) {
         jablicko.setPosition(pixel(randint(0, 15)), pixel(randint(0, 11)))
-        
+
         if (jablicko.overlapsWith(had_hlava)) {
             continue
         }
@@ -114,8 +142,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function(sprite: Sprite, o
 
         break
     }
-})
-
+}
 
 function pixel(x:number):number {
     return x*10+5    
